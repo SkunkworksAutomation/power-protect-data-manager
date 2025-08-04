@@ -3,7 +3,7 @@ Import-Module .\skunkworks.dm.prototype.psm1 -Force
 
 # DEFINE YOUR POWERPROTECT SERVERS
 $Servers = @(
-    "10.xxx.xxx.xxx"
+    "10.239.100.131"
 )
 
 # DEFINE YOUR REPORT VARIABLE
@@ -50,6 +50,7 @@ $Servers | foreach-object {
     -Version 2 `
     -Endpoint "assets?filter=$($Filters)&orderby=name ASC"
 
+    # DISPALY IN CONSOLE
     $Query2 | select-Object `
     name,`
     type,`
