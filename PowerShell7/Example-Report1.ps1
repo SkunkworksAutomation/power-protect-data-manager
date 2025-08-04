@@ -3,7 +3,7 @@ Import-Module .\skunkworks.dm.prototype.psm1 -Force
 
 # DEFINE YOUR POWERPROTECT SERVERS
 $Servers = @(
-    "10.239.100.131"
+    "10.xxx.xxx.xxx"
 )
 
 # DEFINE YOUR REPORT VARIABLE
