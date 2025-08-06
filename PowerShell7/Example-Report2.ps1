@@ -75,7 +75,7 @@ $Servers | foreach-object {
             policyName = $Query1[$i].protectionPolicy.name
             copyId = $Query2.id
             copyTimeUTC = $Query1[$i].lastAvailableCopyTime
-            copySizeBytes = $Query2.copySize
+            copySizeBytes = $Query2.size
             copyType = $Query2.copyType
             copyCreateTimeUTC = $Query2.createTime
             copyRetentionTimeUTC = $Query2.retentionTime
